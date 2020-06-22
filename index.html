@@ -37,7 +37,7 @@
     <button class="home__contact">contact me</button>
 </section>
  <!-- 나에 관하여 -->
-    <section id="about" class="sections">
+    <section id="about" class="sections sections_container">
     <h1>About me</h1>
     <p>안녕하세요 저는 개발자를 꿈꾸며 html, css, js를 익히고 있습니다.
         <br> 현재 운영 중인 블로그엔 공부 일지를 작성 중입니다.</p>
@@ -75,60 +75,53 @@
     </section>
 
         <!-- 스킬 -->
-            <section id="skills" class="sections" >
+            <section id="skills" class="sections">
+                <div class="sections_container">
                 <h1>Skills</h1>
                 <h2>Skills & Attributes</h2>
                 <p> 저는 배움에 흥미가 있습니다. 무슨 일이든 기록하는 버릇이 있어서 프로그래밍 하는데 잘 맞습니다</p>
-                <div class="skillset__left">
-                    <h3 class="skillset__title"></h3>
+              <div class="skillset">
+                  <div class="skillset__left">
+                       <h3 class="skillset__title">SKILLS</h3>
+                    <div class="skill">
+                       <div class="skill__description">
+                            <span>Html</span>
+                            <span>99%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 80%;"></div>
+                        </div>
+                    </div>
                     <div class="skill">
                         <div class="skill__description">
-                            <span>Html</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value"></div>
-                        </div>
-
-                        <div class="skill__description">
                             <span>Css</span>
-                            <span>90%</span>
-                        </div>
+                            <span>99%</span>
+                         </div>
                         <div class="skill__bar">
-                            <div class="skill__value"></div>
+                            <div class="skill__value" style="width: 50%;"></div>
+                            </div>
                         </div>
-
+                        <div class="skill">
                         <div class="skill__description">
                             <span>Js</span>
-                            <span>90%</span>
+                            <span>99%</span>
                         </div>
                         <div class="skill__bar">
-                            <div class="skill__value"></div>
+                            <div class="skill__value" style="width: 0%;"></div>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                        </div>
                 <div class="skillset__right">
                     <div class="tools">
-                        <h3 class="skillset__title">TOOLS</h3>
+                        <h3 class="skillset__title">Attitude</h3>
                         <ul class="tools__list">
-                            <li>
-                                <span>VSC</span>
-                            </li>
-                            <li>
-                                <span>ATOM</span>
-                            </li>
+                                <li><span>Writing</span> </li>
+                                <li><span>Reading</span> </li>
+                                <li><span>Study</span></li>
                         </ul>
-                    </div>
-
-                    
                 </div>
-                <div class="ETC">
-                 <h3 class="skillset__title">ETC</h3>
-                 <ul class="etc__list">
-                     <li><span>GIt</span> </li>
-                     <li><span>blog</span></li>
-                 </ul>
-                </div>
+            </div>
+        </div>
             </section>
             
             <section id="work" class="sections">
