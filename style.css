@@ -225,6 +225,10 @@
       color:var(--color-dark-pink);
       transform: rotate(-15deg) scale(1.2);
     }
+
+    .major {
+      width: 33.3%;
+    }
     .major__title,
     .major__description {
       color: var(--color-dark-grey); 
