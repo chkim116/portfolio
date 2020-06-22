@@ -61,6 +61,13 @@
       cursor: default;
   }
   
+  button {
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: none;
+  }
+
   /* Typography */
   
   h1 {
@@ -125,6 +132,7 @@
 
     .navbar__logo {
         font-size: var(--font-medium);
+        margin-left: 10px;
     }
 
     .navbar__menu {
@@ -134,7 +142,7 @@
 
     .navbar__menu__item {
       list-style: none;
-      margin: 0 10px 0 10x;
+      margin: 0 10px;
       padding: 8px;
     }
     .navbar__menu__item.home {
@@ -148,6 +156,28 @@
         
     }
      
+    #home {
+      background: url("images/home_background_blue.png") center/cover no-repeat;
+      text-align: center;
+      padding:40px;
+    }
     
+    .home__image {
+      border-radius: 50%;
+      border: 2px solid var(--color-white);
+      width: 250px;
+      height: 250px;
+    }
+    .home__title,
+    .home__description {
+      color:var(--color-white);
+    }
 
-
+    .home__contact {
+      font-size: var(--font-medium);
+      margin: 24px;
+      padding : 8px 12px;
+      border: 2px solid var(--color-white);
+      border-radius: var(--size-border-radius);
+      color: var(--color-white);
+    }
