@@ -223,6 +223,9 @@
      margin: 80px 0 60px 0;
     }
     
+    .major {
+      width: 280px;
+    }
     .major__icon {
       width: 170px;
       height: 170px;
@@ -505,6 +508,7 @@
       }
       .major {
         margin-bottom: 10px;
+        width: 100%;
       }
 
       .skillset {
