@@ -76,8 +76,10 @@
     border: none;
   }
 
-  /* animation */ {
-    --animation-duration:300ms;
+  /* animation */ 
+
+  animaiton
+  {  --animation-duration 300ms;
   }
   /* Typography */
   
@@ -129,6 +131,13 @@
   
   }
 
+  a {
+    text-decoration: none;
+  }
+
+
+  /* 넷바 */
+
     #navbar {
       display: flex;
       justify-content: space-between;
@@ -167,6 +176,9 @@
         
     }
      
+
+    /* 자기소개 */
+    
     #home {
       background: url("images/home_background_blue.png") center/cover no-repeat;
       text-align: center;
@@ -199,6 +211,7 @@
       padding:50px;
     }
 
+    /* 전공 및 커리어  */
     .about__majors {
       display: flex;
      margin: 0 auto;
@@ -243,6 +256,7 @@
       margin:auto;
     }
 
+    /* 스킬 */
   
     #skills {
       background: var(--color-yellow);
@@ -291,6 +305,7 @@
       padding: 20px 30px;
     }
 
+    /* 프로젝트 */
     .word__cotegories {
       margin: 40px;
     }
@@ -377,4 +392,45 @@
     .project:hover .project__description {
       opacity: 0.7;
       transform: translateY(0px);
+    }
+    
+    /* 추천사 */
+    #testimonials {
+      background-color: var(--color-light-white);
+    }
+
+    .testimonials {
+      margin: 32px 0;
+    }
+
+    .testimonial {
+      display: flex;
+      justify-content: left;
+    } 
+
+    .testimonial__right {
+      display: flex;
+      justify-content:  flex-end;
+    }
+    .tesimonial__image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 20px;
+    
+    }
+
+    .testimonial__speech-bubble {
+      background-color: var(--color-white);
+      border-radius: var(--size-border-radius);
+      margin: 20px;
+      padding:30px
+    }
+
+    .testimonial__speech-bubble p {
+      color:var(--color-light-grey);
+    }
+    
+    .testimonial__speech-bubble a {
+      color:var(--color-pink);
     }
