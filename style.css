@@ -146,7 +146,7 @@
       align-items: center;
       color: var(--color-white);
       transition: all 300ms ease-in-out;
-      height: 7%;
+      height: 10%;
     }
 
     #navbar.navbar--dark {
@@ -163,7 +163,6 @@
       display: flex;
       cursor: pointer;
     }
-
     .navbar__menu__item {
       list-style: none;
       margin: 0 10px;
@@ -519,12 +518,18 @@
         align-items: flex-start;
        }
 
+       .navbar__menu.open {
+        display: block;
+        z-index: 300;
+        background-color: var(--color-blue);
+      }
 
       .navbar__menu {
         flex-direction: column;
         text-align: center;
         width: 100%;
         display: none;
+        
       }
 
       .about__majors {

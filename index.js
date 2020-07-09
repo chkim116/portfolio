@@ -1,5 +1,7 @@
 'use strict'
 
+// 넷바 스크롤 고정
+
 const navbar = document.querySelector("#navbar");
 const navbarHeight = navbar.getBoundingClientRect().height;
 
@@ -13,6 +15,7 @@ function navbarScroll() {
     }
 }
 
+
 // 넷바 메뉴 버튼 누르면 메뉴로 드롭다운
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event) => {
@@ -23,7 +26,15 @@ navbarMenu.addEventListener('click', (event) => {
     }
     const scrollTo = document.querySelector(link);
     scrollTo.scrollIntoView({behavior:'smooth', block:'center'});
+    navbarMenu.classList.remove('open');
 });
+
+// 넷바 토글 열면 메뉴 열리기
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', function() {
+    navbarMenu.classList.toggle('open');
+})
+
 // 컨택트 버튼 누르면 컨택트로 드롭다운
 const homeContactBtn = document.querySelector('.home__contact');
 homeContactBtn.addEventListener('click', () => {
