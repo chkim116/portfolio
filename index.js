@@ -38,6 +38,20 @@ document.addEventListener('scroll', () => {
 });
 
 
+// arrow-up
+const arrowUp = document.querySelector(".arrow-up")
+document.addEventListener('scroll', function() {
+    if (window.scrollY > homeHeight /2) {
+        arrowUp.classList.add('visible');
+    }
+    else {
+        arrowUp.classList.remove('visible');
+    }
+});
+
+arrowUp.addEventListener('click', () => {
+    scrollIntoView('#home');
+});
 
 
 
