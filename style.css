@@ -75,12 +75,6 @@
     cursor: pointer;
     border: none;
   }
-
-  /* animation */ 
-
-  animaiton
-  {  --animation-duration 300ms;
-  }
   /* Typography */
   
   h1 {
@@ -144,16 +138,25 @@
   /* 넷바 */
 
     #navbar {
+      position: fixed;
+      width: 100%;
       display: flex;
       justify-content: space-between;
-      background: var(--color-blue);
+      background: transparent;
       align-items: center;
       color: var(--color-white);
+      transition: all 300ms ease-in-out;
+      height: 7%;
+    }
+
+    #navbar.navbar--dark {
+    background: var(--color-blue);
+    z-index: 3;
     }
 
     .navbar__logo {
-        font-size: var(--font-medium);
-        margin-left: 10px;
+      font-size: var(--font-medium);
+      margin-left: 10px;
     }
 
     .navbar__menu {
@@ -192,6 +195,7 @@
       background: url("images/home_background_blue.png") center/cover no-repeat;
       text-align: center;
       padding:40px;
+      padding-top: 120px;
     }
     
     .home__image {
