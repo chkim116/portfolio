@@ -13,6 +13,7 @@ function navbarScroll() {
     }
 }
 
+// 넷바 메뉴 버튼 누르면 메뉴로 드롭다운
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event) => {
     const target = event.target;
@@ -23,12 +24,24 @@ navbarMenu.addEventListener('click', (event) => {
     const scrollTo = document.querySelector(link);
     scrollTo.scrollIntoView({behavior:'smooth', block:'center'});
 });
-
+// 컨택트 버튼 누르면 컨택트로 드롭다운
 const homeContactBtn = document.querySelector('.home__contact');
 homeContactBtn.addEventListener('click', () => {
     scrollIntoView('#contact');
 })
 
+// 홈 페이드 아웃 시키기
+const home = document.querySelector('.homecontainar');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', () => {
+    home.style.opacity = 1- window.scrollY / homeHeight;
+});
+
+
+
+
+
+// selector
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior:'smooth', blcok:'center'});
